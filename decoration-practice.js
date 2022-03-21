@@ -2,6 +2,8 @@ const greeting = (name) => {
   console.log(`Hello ${name}`);
 };
 
+// please don't mind this comment
+
 function greetingDecorator(greeting) {
   // pass in the function that we want to decorate
   return function (name) {
