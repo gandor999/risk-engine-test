@@ -4,7 +4,11 @@
   "main": "decoration-practice.js",
   "scripts": {
     "test": "jest",
-    "test:cov": "jest --coverage"
+    "cov": "jest --coverage --coverageReporters json-summary",
+    "prepare": "risk-engine-cov pre-commit"
+  },
+  "riskEngineCov": {
+    "covScript": "npm run cov"
   },
   "repository": {
     "type": "git",
