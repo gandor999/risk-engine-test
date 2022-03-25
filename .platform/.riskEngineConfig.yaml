@@ -1,0 +1,27 @@
+riskThreshold: 30
+automatedReleaseApproved: false
+useGithubEvents: true
+team:
+  role: < Enablement || Outcome >
+  name: < team-name >
+ignoredFiles:
+  - "package-lock.json"
+  # Add additional file or folder paths that should be ignored from Risk Engine analysis i.e. generated files with no inherent risk
+  # e.g. Add a pattern to match mocked files used in testing: - "**/mocks/**"
+riskInputs:
+  - name: deployTarget
+  - name: gitBranchProtection
+  - name: innersource
+  - name: linesChanged
+  - name: semanticCommit
+  - name: changedFiles
+    matchChangesGlobPatterns:
+      "**/*.*": "low"
+      # Add Additional Patterns based on the details of your application
+      # e.g. Add a pattern for the typical files the contain source code: "**/*.js": "medium"
+      # e.g. Add a pattern for folders in your application that contain CI procedures/workflows: ".github/**": "high"
+      # e.g. Add a pattern for folders in your application that deployment configuration and scripts: ".platform/openshift/**": "high"
+  - name: prDescription
+    prTemplatePath: ".github/pull_request_template.md"
+  - name: testCoverage
+    covReportPath: path/to/committed/coverage-summary.json
