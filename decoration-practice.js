@@ -19,3 +19,9 @@ function greetingDecorator(greeting) {
 const decoratedGreeting = greetingDecorator(greeting); // this variable essentially becomes a whole new function altogether
 
 console.log(decoratedGreeting("Geo"));
+
+const add = (num1, num2) => {
+  return num1 + num2;
+};
+
+module.exports = add;

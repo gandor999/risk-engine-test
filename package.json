@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "decoration-practice.js",
+  "scripts": {
+    "test": "jest",
+    "test:cov": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://localhost:3000/gandor/hello-world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "jest": "^27.5.1"
+  },
+  "devDependencies": {
+    "@telus/risk-engine-cov": "^1.0.5"
+  }
+}
