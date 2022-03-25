@@ -25,5 +25,6 @@ const add = (num1, num2) => {
 };
 
 // alternate branch comment
+// add another comment for alternate branch
 
 module.exports = add;
