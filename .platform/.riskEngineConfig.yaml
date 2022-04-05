@@ -24,4 +24,4 @@ riskInputs:
   - name: prDescription
     prTemplatePath: ".github/pull_request_template.md"
   - name: testCoverage
-    covReportPath: path/to/committed/coverage-summary.json
+    covReportPath: ../coverage/coverage-summary.json
